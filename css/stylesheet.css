@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
   /* -webkit-text-stroke: 2px black; */
 }
 
+td {
+    padding-left: 3pt;
+}
+
 .profile {
   padding-left: 15pt;
   padding-top: 15pt;
