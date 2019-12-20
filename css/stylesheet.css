@@ -5,6 +5,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", "serif";
   color: white;
+  /* -webkit-text-stroke: 2px black; */
 }
 
 .profile {
@@ -12,6 +13,23 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15pt;
 }
 
-#home {
-  background-color: cyan;
+.container {
+  width: 1920px;
+  max-width: inherit;
+}
+
+#aboutme {
+  background-color: #c0c0c0
+}
+
+#edu {
+  background-color: #a9a9a9
+}
+
+#academics {
+  background-color: #808080
+}
+
+#cv {
+  background-color: #696969
 }

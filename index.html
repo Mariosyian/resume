@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta name="author" content="Marios Yiannakou">
   <meta name="description" content="Personal project website.">
+  <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/stylesheet.css">
   <!-- Bootstrap JavaScript tags -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <!-- FontAwsome Icons Kit -->
-  <script src="https://kit.fontawesome.com/b01514ba60.js" crossorigin="anonymous"></script>
-  <title>Marios Yiannakou</title>
+  <title>Marios Yiannakou ~ Website Project</title>
 </head>
 
 <body>
   <!-- Navigation Bar -->
-<section id="navigationBar">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- Table header with picture and personal information -->
     <table>
@@ -44,49 +44,105 @@
       <!-- Navigation bar items -->
       <ol class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Resume</a>
         </li>
         <!-- Instead of Contact footer, make dropdown menu -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Connect</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://www.github.com/Mariosyian">
-              <i class="fab fa-github-square"></i>
-              GitHub
-            </a>
-            <a class="dropdown-item" href="https://www.linkedin.com/in/marios-yiannakou/">
-              <i class="fab fa-linkedin"></i>
-              LinkedIn
-            </a>
-            <a class="dropdown-item" href="mailto:marios.yiannakou@hotmail.com">
-              <i class="fas fa-envelope-square"></i>
-              EMail
-            </a>
+            <a class="dropdown-item" href="https://www.github.com/Mariosyian">GitHub</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/marios-yiannakou/">LinkedIn</a>
+            <a class="dropdown-item" href="mailto:marios.yiannakou@hotmail.com">EMail</a>
           </div>
         </li>
       </ol>
     </div>
   </nav>
-</section>
 
-  <!-- Home -->
-  <section id="home">
-    <div class="row">
+  <!-- About Me -->
+  <section id="aboutme">
+    <div class="container">
       <!-- Large = Laptop ~ Medium = Tablet ~ Small = Phone -->
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <img src="images/shark.jpeg" alt="Shark">
+      <h1 style="text-decoration: underline;">About Me</h1>
+      <div class="row">
+        <div class="col">
+          <p>I enjoy long walks through the parks of Manchester or going to the gym during my mornings to start the day, while going out with a friend to a pub during the night. During my time at university, I also learned to appreciate what it means
+            to stay indoors every other day to simply relax and spend some time on myself.
+            Currently looking for an industrial placement opportunity in the Software Engineering department and Summer internships.
+          </p>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <img src="images/shark.jpeg" alt="Shark">
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="edu">
+    <div class="container">
+      <h1 style="text-decoration: underline;">Education</h1>
+      <div class="row">
+        <div class="col-12">
+          <p>Attended the High School: The Grammar School Of Nicosia. September of 2010 and June of 2017.</p>
+        </div>
+        <div class="col-12">
+          <p>Served full 14-month military service. July of 2017 and September of 2018.</p>
+        </div>
+        <div class="col-12">
+          <table style="padding-left: 10pt;">
+            <tbody>
+              <tr>
+                <p>Began undergraduate course of BSc Computer Science at The University of Manchester. September of 2018 with an expected graduation in year 2021.</p>
+              </tr>
+              <tr>
+                <td><b>Year 1 Modules:</b></td>
+                <td>First Year Team Project, Fundamentals of AI, Fundamentals of Computation, Fun-damentals of Computer Architecture, Fundamentals of Engineering, Mathematical Techniques, ObjectOriented Programming with Java, Distributed Systems</td>
+              </tr>
+              <tr>
+                <td><b>Year 2 Modules:</b></td>
+                <td>Algorithms and Imperative Programming, Fundamentals of Databases, Operat-ing Systems, Science and the Modern World, Software Engineering (Collaborative project), ProcessorMicroarchitecture</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <img src="images/shark.jpeg" alt="Shark">
+    </div>
+  </section>
+
+  <!-- Academic Achievements -->
+  <section id="academics">
+    <div class="container">
+      <h1 style="text-decoration: underline;">Academic Achievements</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h3>Microsoft Office Ambassador</h3>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <b>2015 - 2017</b>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>Nominated by teachers committee and peers.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>Mentored younger students studying for MOS Exams.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>Represented school in events and talks about the program.</p>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <img src="images/shark.jpeg" alt="Shark">
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="cv">
+    <div class="container">
+      <h1 style="text-decoration: underline;">Resume</h1>
+      <div class="row">
+        <!-- Insert resume here -->
       </div>
     </div>
   </section>
