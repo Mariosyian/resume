@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Marios Yiannakou">
-  <meta name="description" content="Personal project website.">
+  <meta name="description" content="Personal project website - https://github.com/Mariosyian/website-project.">
+  <title>Marios Yiannakou ~ Website Project</title>
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Fonts -->
@@ -15,12 +16,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <title>Marios Yiannakou ~ Website Project</title>
 </head>
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <!-- Table header with picture and personal information -->
     <table>
       <tbody>
@@ -71,13 +71,13 @@
       <!-- Large = Laptop ~ Medium = Tablet ~ Small = Phone -->
       <h1 style="text-decoration: underline;">About Me</h1>
       <div class="row">
-        <div class="col">
+        <div class="col-lg-12 col-md-3 col-sm-2">
           <p>I enjoy long walks through the parks of Manchester or going to the gym during my mornings to start the day, while going out with a friend to a pub during the night. During my time at university, I also learned to appreciate what it means
             to stay indoors every other day to simply relax and spend some time on myself.
             Currently looking for an industrial placement opportunity in the Software Engineering department and Summer internships.
           </p>
         </div>
-      </div>      
+      </div>
     </div>
   </section>
 
@@ -86,25 +86,28 @@
     <div class="container">
       <h1 style="text-decoration: underline;">Education</h1>
       <div class="row">
-        <div class="col-12">
-          <p>Attended the High School: The Grammar School Of Nicosia. September of 2010 and June of 2017.</p>
+        <div class="col-lg-12 col-md-5 col-sm-1">
+          <table>
+            <tbody>
+              <tr>
+                <ul>
+                  <li>Attended the High School: The Grammar School Of Nicosia. September of 2010 and June of 2017.</li>
+                  <li>Served full 14-month military service. July of 2017 and September of 2018.</li>
+                  <li>Began undergraduate course of BSc Computer Science at The University of Manchester. September of 2018 with an expected graduation in year 2021.</li>
+                </ul>
+            </tbody>
+          </table>
         </div>
-        <div class="col-12">
-          <p>Served full 14-month military service. July of 2017 and September of 2018.</p>
-        </div>
-        <div class="col-12">
+        <div class="col-lg-12 col-md-5 col-sm-1">
           <table style="padding-left: 10pt;">
             <tbody>
               <tr>
-                <p>Began undergraduate course of BSc Computer Science at The University of Manchester. September of 2018 with an expected graduation in year 2021.</p>
-              </tr>
-              <tr>
-                <td><b>Year 1 Modules:</b></td>
+                <th scope="row"><b>Year 1 Modules:</b></th>
                 <td>First Year Team Project, Fundamentals of AI, Fundamentals of Computation, Fun-damentals of Computer Architecture, Fundamentals of Engineering, Mathematical Techniques, ObjectOriented Programming with Java, Distributed Systems</td>
               </tr>
               <tr>
-                <td><b>Year 2 Modules:</b></td>
-                <td>Algorithms and Imperative Programming, Fundamentals of Databases, Operat-ing Systems, Science and the Modern World, Software Engineering (Collaborative project), ProcessorMicroarchitecture</td>
+                <th scope="row"><b>Year 2 Modules:</b></th>
+                <td>Algorithms and Imperative Programming, Fundamentals of Databases, Operating Systems, Science and the Modern World, Software Engineering (Collaborative project), ProcessorMicroarchitecture</td>
               </tr>
             </tbody>
           </table>
@@ -141,15 +144,18 @@
                 <th scope="row">Awards:</th>
                 <td>Global Legal Hackathon (2nd Place out of 7 teams) - February 2019</td>
               </tr>
-                <tr>
-                  <td></td>
-                  <td>Microsoft Office Ambassador - 2015 - 2017</td>
-                </tr>
+              <tr>
+                <td></td>
+                <td>Microsoft Office Ambassador - 2015 - 2017</td>
+              </tr>
+              <tr>
+                <th scope="row">Personal Projects:</th>
+                <td>For a list of all of my personal projects, feel free to visit my <a href="https://www.github.com/Mariosyian">GitHub</a> page</td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <p>For a list of all of my personal projects, feel free to visit my <a href="https://www.github.com/Mariosyian">GitHub</a> page</p>
     </div>
   </section>
 </body>
