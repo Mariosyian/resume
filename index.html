@@ -44,7 +44,7 @@
       <!-- Navigation bar items -->
       <ol class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About Me</a>
+          <a class="nav-link" href="#top">About Me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#edu">Education</a>
@@ -65,28 +65,24 @@
     </div>
   </nav>
 
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button> 
+
   <!-- About Me -->
   <section id="aboutme">
-    <div class="container">
+    <div class="container-fluid">
       <!-- Large = Laptop ~ Medium = Tablet ~ Small = Phone -->
       <h1 style="text-decoration: underline;">About Me</h1>
-      <div class="row">
-        <div class="col-lg-12 col-md-3 col-sm-2">
           <p>I enjoy long walks through the parks of Manchester or going to the gym during my mornings to start the day, while going out with a friend to a pub during the night. During my time at university, I also learned to appreciate what it means
             to stay indoors every other day to simply relax and spend some time on myself.
             Currently looking for an industrial placement opportunity in the Software Engineering department and Summer internships.
           </p>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- Education -->
   <section id="edu">
-    <div class="container">
+    <div class="container-fluid">
       <h1 style="text-decoration: underline;">Education</h1>
-      <div class="row">
-        <div class="col-lg-12 col-md-5 col-sm-1">
           <table>
             <tbody>
               <tr>
@@ -97,8 +93,6 @@
                 </ul>
             </tbody>
           </table>
-        </div>
-        <div class="col-lg-12 col-md-5 col-sm-1">
           <table style="padding-left: 10pt;">
             <tbody>
               <tr>
@@ -111,17 +105,13 @@
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- Resume -->
   <section id="cv">
-    <div class="container">
+    <div class="container-fluid">
       <h1 style="text-decoration: underline;">Resume</h1>
-      <div class="row">
-        <div class="col-lg-12 col-md-6 col-sm-1">
           <table class="table">
             <tbody>
               <tr>
@@ -154,10 +144,10 @@
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
     </div>
   </section>
 </body>
 
+<!-- Custom JavaScript -->
+<script src="js/topBtn.js"></script>
 </html>
