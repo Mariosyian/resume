@@ -1,3 +1,4 @@
+/* Elements */
 body {
   background-color: #b2adb5;
 }
@@ -12,11 +13,25 @@ td {
     padding-left: 3pt;
 }
 
+/* Classes */
 .profile {
   padding-left: 15pt;
   padding-top: 15pt;
 }
 
+.dropdown-menu{
+    background-color: #353535;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: #bbbbbb;
+}
+
+/* IDs */
 #aboutme {
   background-color: #c0c0c0
 }
