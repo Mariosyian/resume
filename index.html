@@ -23,16 +23,30 @@
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <!-- Profile picture -->
+    <img src="images/me.png" alt="Marios Yiannakou" class="profile" height="150" width="150">
     <!-- Table header with picture and personal information -->
     <table>
       <tbody>
-        <td>
-          <img src="images/me.png" alt="Marios Yiannakou" class="profile" height="150" width="150">
-        </td>
-        <td>
-          <h1 class="h1">Marios Yiannakou</h1>
-          <h5 class="h5">BSc Computer Science | University of Manchester</h5>
-        </td>
+        <tr>
+          <td>
+            <h1 class="h1">Marios Yiannakou</h1>
+            <h5 class="h5">BSc Computer Science | University of Manchester</h5>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.linkedin.com/in/marios-yiannakou/">
+              <img src="images/linkedin-sign.png" alt="LinkedIn logo" title="LinkedIn">
+            </a>
+            <a href="https://www.github.com/Mariosyian">
+              <img src="images/github-logo.png" alt="GitHub logo" title="GitHub">
+            </a>
+            <a href="mailto:marios.yiannakou@hotmail.com?subject=Enquiry:&body=Full%20Name:%0D%0AContact%20Number%20|%20EMail:%0D%0AReason%20of%20contact">
+              <img src="images/email.png" alt="EMail icon" title="EMail">
+            </a>
+          </td>
+        </tr>
       </tbody>
     </table>
 
@@ -55,14 +69,8 @@
           <a class="nav-link" href="#cv">Resume</a>
         </li>
         <!-- Instead of Contact footer, make dropdown menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Connect</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://www.github.com/Mariosyian">GitHub</a>
-            <a class="dropdown-item" href="https://www.linkedin.com/in/marios-yiannakou/">LinkedIn</a>
-            <!-- %20 = space, %0D%0A = newline -->
-            <a class="dropdown-item" href="mailto:marios.yiannakou@hotmail.com?subject=Enquiry:&body=Full%20Name:%0D%0AContact%20Number%20|%20EMail:%0D%0AReason%20of%20contact:">EMail</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="credit.html" target="_blank">Resources</a>
         </li>
       </ol>
     </div>
@@ -75,9 +83,7 @@
     <div class="container-fluid">
       <!-- Large = Laptop ~ Medium = Tablet ~ Small = Phone -->
       <h1 style="text-decoration: underline;">About Me</h1>
-      <p>I enjoy long walks through the parks of Manchester or going to the gym during my mornings to start the day, while going out with a friend to a pub during the night. During my time at university, I also learned to appreciate what it means
-        to stay indoors every other day to simply relax and spend some time on myself.
-        Currently looking for an industrial placement opportunity and Summer internships in the Software Engineering department. Any other positions are also welcomed.
+      <p>I am a second year student at the University of Manchester studying towards a Bachelors Degree in Computer Science and I am currently looking for an industrial placement and Summer internship opportunities in the Software Engineering department. Any other positions are also welcomed.
       </p>
     </div>
   </section>
