@@ -8,25 +8,22 @@
   <!-- Fixes device scaling problem -->
   <meta name="viewport" content="user-scalable = yes">
   <title>Marios Yiannakou ~ Website Project</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <!-- Bootstrap JavaScript tags -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <!-- Profile picture -->
-    <img src="images/me.png" alt="Marios Yiannakou" class="profile" height="150" width="150">
-    <!-- Table header with picture and personal information -->
-    <table>
+  <!-- Table header with picture and personal information -->
+  <div class="container header">
+    <table style="width: 100%;">
       <tbody>
+        <tr>
+          <!-- Profile picture -->
+          <td>
+            <img id="profilePic" src="images/me.png" alt="Marios Yiannakou" height="200" width="200">
+          </td>
+        </tr>
         <tr>
           <td>
             <h1 class="h1">Marios Yiannakou</h1>
@@ -35,62 +32,49 @@
         </tr>
         <tr>
           <td>
-              <!-- Navbar Social Links -->
-              <a href="https://www.linkedin.com/in/marios-yiannakou/" class="btn btn-outline-light">
-                <img src="images/linkedin-sign.png" alt="LinkedIn logo" title="LinkedIn">
-              </a>
-              <a href="https://www.github.com/Mariosyian" class="btn btn-outline-light">
-                <img src="images/github-logo.png" alt="GitHub logo" title="GitHub">
-              </a>
-              <a href="mailto:marios.yiannakou@hotmail.com?body=Full%20Name:%0D%0AContact%20Number%20|%20EMail:%0D%0A%0D%0AReason%20of%20contact:" class="btn btn-outline-light">
-                <img src="images/email.png" alt="EMail icon" title="EMail">
-              </a>
+            <!-- Navbar Social Links -->
+            <a href="https://www.linkedin.com/in/marios-yiannakou/" class="btn btn-outline-light" target="_blank">
+              <img src="images/linkedin-sign.png" alt="LinkedIn logo" title="LinkedIn">
+            </a>
+            <a href="https://www.github.com/Mariosyian" class="btn btn-outline-light" target="_blank">
+              <img src="images/github-logo.png" alt="GitHub logo" title="GitHub">
+            </a>
+            <a href="mailto:marios.yiannakou@hotmail.com?body=Full%20Name:%0D%0AContact%20Number%20|%20EMail:%0D%0A%0D%0AReason%20of%20contact:" class="btn btn-outline-light">
+              <img src="images/email.png" alt="EMail icon" title="EMail">
+            </a>
+            <a href="tel:0044 7525 057118" class="btn btn-outline-light">
+              <img src="images/phone.png" alt="EMail icon" title="EMail">
+            </a>
+          </td>
+        </tr>
+        <tr style="text-align: center;">
+          <!-- Navigation bar items -->
+          <td style="text-align: center;">
+            <a class="nav-link sectionLink btn btn-outline-light" href="#aboutme">About Me</a>
+            <a class="nav-link sectionLink btn btn-outline-light" href="#edu">Education</a>
+            <a class="nav-link sectionLink btn btn-outline-light" href="#cv">Resume</a>
+            <a class="nav-link sectionLink btn btn-outline-light" href="credit.html" target="_blank">Resources</a>
           </td>
         </tr>
       </tbody>
     </table>
-
-    <!-- Button that is displayed if screen is small enough that it can't show all our links e.g. Mobile phone screens -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsable navigation button -->
-    <div class="collapse navbar-collapse" id="navBar">
-      <!-- Navigation bar items -->
-      <ol class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#edu">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#cv">Resume</a>
-        </li>
-        <!-- Instead of Contact footer, make dropdown menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="credit.html" target="_blank">Resources</a>
-        </li>
-      </ol>
-    </div>
-  </nav>
-
+  </div>
   <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
+  <!-- WebPage Body -->
+  
   <!-- About Me -->
   <section id="aboutme">
-    <div class="container-fluid">
+    <div class="container-fluid section">
       <!-- Large = Laptop ~ Medium = Tablet ~ Small = Phone -->
       <h1 style="text-decoration: underline;">About Me</h1>
-      <p>I am a second year student at the University of Manchester studying towards a Bachelors Degree in Computer Science and I am currently looking for an industrial placement and Summer internship opportunities in the Software Engineering department. Any other positions are also welcomed.
-      </p>
+      <p>I am a second year student at the University of Manchester studying towards a Bachelors Degree in Computer Science and I am currently looking for an industrial placement and Summer internship opportunities in the Software Engineering department. Any other positions are also welcomed.</p>
     </div>
   </section>
 
   <!-- Education -->
   <section id="edu">
-    <div class="container-fluid">
+    <div class="container-fluid section">
       <h1 style="text-decoration: underline;">Education</h1>
       <table>
         <tbody>
@@ -100,17 +84,17 @@
               <li>Served 14-month military service. July of 2017 and September of 2018. 10 month desk job, managing units digital filesystem.</li>
               <li>Began undergraduate course of BSc Computer Science at The University of Manchester. September of 2018 with an expected graduation in year 2021.</li>
             </ul>
-        </tbody>
+          </tbody>
       </table>
       <table style="padding-left: 10pt;">
         <tbody>
           <tr>
             <th scope="row"><b>Year 1 Modules:</b></th>
-            <td>First Year Team Project, Fundamentals of AI, Fundamentals of Computation, Fundamentals of Computer Architecture, Fundamentals of Engineering, Mathematical Techniques, Object Oriented Programming with Java, Distributed Systems</td>
+            <td class="qualifications">First Year Team Project, Fundamentals of AI, Fundamentals of Computation, Fundamentals of Computer Architecture, Fundamentals of Engineering, Mathematical Techniques, Object Oriented Programming with Java, Distributed Systems</td>
           </tr>
           <tr>
             <th scope="row"><b>Year 2 Modules:</b></th>
-            <td>Algorithms and Imperative Programming, Fundamentals of Databases, Operating Systems, Science and the Modern World, Software Engineering (Collaborative project), Processor Microarchitecture</td>
+            <td class="qualifications">Algorithms and Imperative Programming, Fundamentals of Databases, Operating Systems, Science and the Modern World, Software Engineering (Collaborative project), Processor Microarchitecture, Distributed Computing, Mobile Systems, Computer Graphics, Understanding Mental Health</td>
           </tr>
         </tbody>
       </table>
@@ -119,37 +103,37 @@
 
   <!-- Resume -->
   <section id="cv">
-    <div class="container-fluid">
+    <div class="container-fluid section">
       <h1 style="text-decoration: underline;">Resume</h1>
       <table class="table">
         <tbody>
           <tr>
             <th scope="row">Programming Languages:</th>
-            <td>Java(Proficient), C, Python (Self-teaching), Visual Basic</td>
+            <td class="qualifications">Java(Proficient) | C | Python (Self-teaching) | Visual Basic</td>
           </tr>
           <tr>
             <th scope="row">Version Control:</th>
-            <td>Git</td>
+            <td class="qualifications">Git</td>
           </tr>
           <tr>
             <th scope="row">Web Development:</th>
-            <td>HTML, CSS, PHP, MySQL</td>
+            <td class="qualifications">HTML | CSS | PHP | MySQL | JavaScript | Spring Framework</td>
           </tr>
           <tr>
             <th scope="row">Extra Curriculars:</th>
-            <td>Currently watching Udemy courses for: Linux Command Line | Web Development | Ethical Hacking</td>
-          </tr>
-          <tr>
-            <th scope="row">Awards:</th>
-            <td>Global Legal Hackathon (2nd Place out of 7 teams) - February 2019</td>
+            <td class="qualifications">Currently watching Udemy courses for: Linux Command Line | Web Development | Ethical Hacking</td>
           </tr>
           <tr>
             <td></td>
-            <td>Microsoft Office Ambassador - 2015 - 2017</td>
+            <td class="qualifications">Global Legal Hackathon (2nd Place out of 7 teams) - February 2019</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="qualifications">Microsoft Office Ambassador - 2015 - 2017</td>
           </tr>
           <tr>
             <th scope="row">Personal Projects:</th>
-            <td>For a list of all of my personal projects, feel free to visit my <a href="https://www.github.com/Mariosyian">GitHub</a> page</td>
+            <td class="qualifications">For a list of all of my personal projects, feel free to visit my <a href="https://www.github.com/Mariosyian">GitHub</a> page</td>
           </tr>
         </tbody>
       </table>
@@ -159,5 +143,6 @@
 
 <!-- Custom JavaScript -->
 <script src="js/topBtn.js"></script>
-
+<!-- Bootstrap JavaScript tags -->
+<script src="js/bootstrap.bundle.js"></script>
 </html>

@@ -1,51 +1,76 @@
 /* Elements */
 body {
-  background-color: #c0c0c0;
+  background-color: rgb(86, 159, 255);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Ubuntu", "serif";
-  color: white;
-  /* -webkit-text-stroke: 2px black; */
+  /* Google API - Ubuntu font */
+  @font-face {
+    font-family: 'Ubuntu';
+    src:url('fonts/Ubuntu/')  format('truetype'),
+  }
+  color: rgb(70, 51, 51);
+  text-align: center;
+  font-size: 40pt;
 }
 
 td {
-    padding-left: 3pt;
+  padding-left: 15px;
+  text-align: center;
+}
+
+tr {
+  padding: 10px;
+}
+
+section {
+  padding-bottom: 10px;
 }
 
 /* Classes */
+.header {
+  background-color: rgba(253, 177, 168, 0.89);
+  border-radius: 10px;
+  padding: 5px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .profile {
-  padding-left: 15pt;
-  padding-top: 15pt;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-.dropdown-menu{
-    background-color: #353535;
+.qualifications {
+  text-align: left;
 }
 
-.dropdown-item{
-    color: white;
+.sectionLink {
+  display: inline-block;
 }
 
-.dropdown-item:hover{
-    background-color: #bbbbbb;
+.section {
+  width: 75%;
 }
 
 /* IDs */
 #aboutme {
-  background-color: #c0c0c0
-}
-
-#edu {
-  background-color: #a9a9a9
-}
-
-#academics {
-  background-color: #808080
+  background-color: rgb(139, 189, 233);
 }
 
 #cv {
-  background-color: #696969
+  background-color: rgb(139, 189, 233);
+}
+
+#edu {
+  
+}
+
+#profilePic {
+  align-self: center;
 }
 
 #topBtn {
