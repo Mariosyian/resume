@@ -28,6 +28,12 @@ section {
 }
 
 /* Classes */
+.background {
+  font-size: 14pt;
+  text-align: left;
+  width: 100%;
+}
+
 .header {
   background-color: rgba(253, 177, 168, 0.89);
   border-radius: 10px;
