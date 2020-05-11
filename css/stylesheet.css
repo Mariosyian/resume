@@ -1,6 +1,9 @@
 /* Elements */
 body {
-  background-color: rgb(86, 159, 255);
+  background-color: #3241E7;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -9,7 +12,6 @@ h1 {
     font-family: 'Ubuntu';
     src:url('fonts/Ubuntu/')  format('truetype'),
   }
-  color: rgb(70, 51, 51);
   text-align: center;
   font-size: 40pt;
   margin-top: 15px;
@@ -17,11 +19,13 @@ h1 {
 }
 
 td {
+  color: white;
   padding-left: 15px;
   text-align: center;
 }
 
 tr {
+  color: white;
   padding: 10px;
 }
 
@@ -37,7 +41,6 @@ section {
 }
 
 .header {
-  background-color: rgba(253, 177, 168, 0.89);
   border-radius: 10px;
   padding: 5px;
   width: max-content;
@@ -47,34 +50,63 @@ section {
   margin-bottom: 15px;
 }
 
+.linkBtn {
+  display: inline-block;
+  margin: 5px 5px 0;
+}
+
+.modules-table {
+  padding-left: 10pt;
+}
+
 .profile {
   padding-left: 15px;
   padding-top: 15px;
+}
+
+.profile-table {
+  width: 100%;
 }
 
 .qualifications {
   text-align: left;
 }
 
-.sectionLink {
-  display: inline-block;
+.qualifications-header {
+  font-size: larger;
+  text-align: center;
 }
 
 .section {
   width: 75%;
 }
 
-/* IDs */
-#aboutme {
-  background-color: rgb(139, 189, 233);
+.section-body {
+  background-color: #3514AC;
   margin-left: auto;
   margin-right: auto;
 }
 
-#resume {
-  background-color: rgb(139, 189, 233);
-  margin-left: auto;
-  margin-right: auto;
+.section-buttons {
+  text-align: center;
+}
+
+.section-header {
+  padding: 3px 0 0 0;
+  text-decoration: underline;
+}
+
+.table-cell-quarter {
+  width: 25%;
+}
+
+.table-cell-fifth {
+  width: 20%;
+}
+
+/* IDs */
+#aboutme {
+  text-align: center;
 }
 
 #edu {
@@ -87,11 +119,11 @@ section {
 }
 
 #topBtn {
-  background-color: #303030;
+  background-color: rgb(86, 159, 255);
+  border: solid #263a92;
   border-radius: 15px;
-  border: solid #454545;
   bottom: 10px;
-  color: white;
+  color: rgb(211, 22, 148);
   cursor: pointer;
   display: none;
   font-size: 14px;
@@ -105,8 +137,9 @@ section {
 }
 
 #topBtn:hover {
-  background-color: #505050;
-  border: solid #606060;
+  background-color: rgb(86, 159, 255);
+  border: solid #263a92;
+  font-weight: bold;
   opacity: 100%;
   transition: 0.5s;
 }
