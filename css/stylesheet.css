@@ -1,7 +1,8 @@
 /* Elements */
 body {
-  background-color: #3241E7;
+  background-color: #2e28a7;
   color: white;
+  font-size: 14pt;
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,18 +42,14 @@ section {
 }
 
 .header {
-  border-radius: 10px;
   padding: 5px;
   width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 20px auto 15px;
 }
 
 .linkBtn {
   display: inline-block;
-  margin: 5px 5px 0;
+  margin: 15px 20px 0;
 }
 
 .modules-table {
@@ -64,44 +61,48 @@ section {
   padding-top: 15px;
 }
 
+.profile-info {
+  margin: auto;
+}
+
+.profile-section {
+  text-align: center;
+}
+
 .profile-table {
   width: 100%;
 }
 
 .qualifications {
+  background-color: rgb(18, 96, 117);
+  border: 1px solid azure;
   text-align: left;
 }
 
 .qualifications-header {
-  font-size: larger;
+  background-color: #187f9c;
+  border: 1px solid azure;
+  font-size: xx-large;
   text-align: center;
 }
 
 .section {
+  margin: auto;
   width: 75%;
 }
 
 .section-body {
-  background-color: #3514AC;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-buttons {
-  text-align: center;
+.section-body {
+  background-color: #16117c;
 }
 
 .section-header {
   padding: 3px 0 0 0;
   text-decoration: underline;
-}
-
-.table-cell-quarter {
-  width: 25%;
-}
-
-.table-cell-fifth {
-  width: 20%;
 }
 
 /* IDs */
@@ -123,7 +124,7 @@ section {
   border: solid #263a92;
   border-radius: 15px;
   bottom: 10px;
-  color: rgb(211, 22, 148);
+  color: rgb(255, 238, 0);
   cursor: pointer;
   display: none;
   font-size: 14px;

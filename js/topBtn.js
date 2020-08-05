@@ -1,6 +1,6 @@
 // https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // Get the button:
-mybutton = document.getElementById("topBtn");
+const mybutton = document.getElementById("topBtn");
 
 function scrollFunction() {
   if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
