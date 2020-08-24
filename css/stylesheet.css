@@ -24,7 +24,7 @@ hr {
 }
 
 .linkBtn {
-  padding: 2% 2% 3%;
+  padding: 5% 2% 2%;
   text-align: center;
 }
 
@@ -38,15 +38,21 @@ hr {
 
 /* IDs */
 #profilePic {
-  height: 300px;
   margin: auto;
   padding-top: 5%;
-  width: 300px;
 }
 
 #root {
   background-color: #F1F1F1;
-  height: 85%;
+  padding: 1%;
   margin: 15% auto;
-  width: 80%;
+  width: 85%;
+}
+
+/* Mobile Friendliness */
+@media screen and (max-width: 990px) {
+  #profilePic {
+    height: 225px;
+    width: 225px;
+  }  
 }
