@@ -4,172 +4,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Marios Yiannakou">
-  <meta name="description" content="Personal project website - https://github.com/Mariosyian/website-project to act as a CV for internship and job opportunities.">
-  <!-- Fixes device scaling problem -->
+  <meta name="description" content="Personal project website - https://github.com/Mariosyian/website-project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marios Yiannakou ~ Website Project</title>
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="https://kit.fontawesome.com/b01514ba60.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- Table header with picture and personal information -->
-    <div class="header profile-section">
-      <!-- Profile -->
-      <div class="profile-info">
-        <div>
-          <img id="profilePic" src="images/me.png" alt="Marios Yiannakou" height="200" width="200">
-        </div>
-        <h1 class="h1">Marios Yiannakou</h1>
-        <h5>BSc Computer Science | University of Manchester</h5>
-      </div>
-      <!-- Navbar Social Links -->
+  <div class="container" id="root">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a href="https://www.linkedin.com/in/marios-yiannakou/" class="btn btn-outline-light linkBtn" target="_blank">
-            <img src="images/linkedin-sign.png" alt="LinkedIn logo" title="LinkedIn">
-          </a>
+        <div class="col-lg-6 profilePic">
+          <img id="profilePic" src="images/me.png" alt="Marios Yiannakou">
         </div>
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a href="https://www.github.com/Mariosyian" class="btn btn-outline-light linkBtn" target="_blank">
-            <img src="images/github-logo.png" alt="GitHub logo" title="GitHub">
-          </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a href="mailto:marios.yiannakou@hotmail.com?body=Full%20Name:%0D%0AContact%20Number%20|%20EMail:%0D%0A%0D%0AReason%20of%20contact:" class="btn btn-outline-light linkBtn">
-            <img src="images/email.png" alt="EMail icon" title="EMail">
-          </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a href="tel:0044 7525 057118" class="btn btn-outline-light linkBtn">
-            <img src="images/phone.png" alt="Phone icon" title="Phone #">
-          </a>
-        </div>
-      </div>
-      <!-- Navigation bar items -->
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a class="nav-link linkBtn btn btn-outline-light" href="#aboutme">About Me</a>
-        </div>
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a class="nav-link linkBtn btn btn-outline-light" href="#edu">Background</a>
-        </div>
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a class="nav-link linkBtn btn btn-outline-light" href="#resume">Resume</a>
-        </div>
-        <div class="col-12 col-sm-6 col-md col-lg col-xl">
-          <a class="nav-link linkBtn btn btn-outline-light" href="credit.html" target="_blank">Resources</a>
+        <div class="col-lg-6 info">
+          <div class="row header">Marios Yiannakou</div>
+          <div class="row">BSc Computer Science w Industrial Experience</div>
+          <div class="row subheading">Sep 2018 - July 2022</div>
+          <hr>
+          <div class="row">Recent Experience:</div>
+          <div class="row">Summer Intern, IHSMarkit</div>
+          <div class="row subheading">June - July 2020</div>
+
+          <div class="row">
+            <div class="col-6 col-md-3 linkBtn">
+              <a href="https://www.linkedin.com/in/marios-yiannakou/" class="btn btn-outline-dark" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 linkBtn">
+              <a href="https://www.github.com/Mariosyian" class="btn btn-outline-dark" target="_blank">
+                <i class="fab fa-github-square fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 linkBtn">
+              <a href="mailto:marios.yiannakou@hotmail.com?body=Full%20Name:%0D%0AContact%20Number%20|%20EMail:%0D%0A%0D%0AReason%20of%20contact:" class="btn btn-outline-dark">
+                <i class="far fa-envelope-open fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 linkBtn">
+              <a href="./assets/CV.pdf" class="btn btn-outline-dark" target="_blank">
+                <i class="fas fa-file fa-2x"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-  
-    <!-- About Me -->
-    <section id="aboutme" class="section-body">
-      <div class="section">
-        <h1 class="section-header">About Me</h1>
-        <p class="background">
-          Second year student at the University of Manchester studying towards a Bachelors Degree in Computer Science w Industrial Experience (Expected Graduation - Summer 2022).
-        </p>
-        <p class="background">
-          Proficient in Java and trying to learn the Python programming language, but also a bit of experience in C/C++. I have fairly good knowledge of the Git version control system and terminal (Linux / Windows) for basic functionality.
-        </p>
-      </div>
-    </section>
-  
-    <!-- Education -->
-    <section id="edu" class="section-body">
-      <div class="section">
-        <h1 class="section-header">Background</h1>
-        <!-- Background -->
-        <table class="table">
-          <tbody>
-            <tr>
-              <td class="background">Served 14-month military service. July 2017 until September 2018. 10 month desk job, managing units digital filesystem.</td>
-            </tr>
-            <tr>
-              <td class="background">Began undergraduate course of BSc Computer Science at The University of Manchester. September 2018 with an expected graduation in June 2021.</td>
-            </tr>
-          </tbody>
-        </table>
-  
-        <!-- University -->
-        <div class="row qualifications-header"><b>Year 1 Modules:</b></div>
-        <div class="row">
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">First Year Team Project</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Object Oriented Programming with Java</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Fundamentals of Engineering</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Fundamentals of Computer Architecture</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Mathematical Techniques</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Fundamentals of AI</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Fundamentals of Computation</p>
-          <p class="qualifications col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">Distributed Systems</p>
-        </div>
-        
-        <div class="row qualifications-header"><b>Year 2 Modules:</b></div>
-        <div class="row">
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Algorithms and Imperative Programming</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Fundamentals of Databases</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Operating Systems</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Processor Microarchitecture</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Science and the Modern World</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Software Engineering (Collaborative project)</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Distributed Computing</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Mobile Systems</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Computer Graphics</p>
-          <p class="qualifications col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">Understanding Mental Health</p>
-          <p class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2"></p>
-          <p class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2"></p>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Resume -->
-    <section id="resume" class="section-body">
-      <div class="section">
-        <h1 class="section-header">Qualifications</h1>
-        <table class="table table-striped table-hover">
-          <tbody>
-            <tr>
-              <th scope="row">Internships:</th>
-              <td class="qualifications">Summer Intern at IHSMarkit (5 weeks)</td>
-            </tr>
-            <tr>
-              <th scope="row">Programming Languages:</th>
-              <td class="qualifications">Java (Proficient) | Python (Self-teaching) | C</td>
-            </tr>
-            <tr>
-              <th scope="row">Version Control:</th>
-              <td class="qualifications">Git (GitHub and GitLab)</td>
-            </tr>
-            <tr>
-              <th scope="row">Web Development:</th>
-              <td class="qualifications">HTML | CSS | MongoDB | JavaScript | Spring Framework | NodeJS</td>
-            </tr>
-            <tr>
-              <th scope="row">Personal Projects:</th>
-              <td class="qualifications">For a list of all of my personal projects, feel free to visit my <a href="https://www.github.com/Mariosyian" target="_blank">GitHub</a> page</td>
-            </tr>
-            <tr>
-              <th scope="row">Extra Curriculars:</th>
-              <td class="qualifications">Microsoft Ambassador (Cyprus - TheGrammarSchool) - 2015 - 2017</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td class="qualifications">Global Legal Hackathon (2nd Place out of 7 teams) - February 2019</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
   </div>
 </body>
 
-<!-- Custom JavaScript -->
-<script src="js/topBtn.js"></script>
 <!-- Bootstrap JavaScript tags -->
 <script src="js/bootstrap.bundle.js"></script>
 </html>

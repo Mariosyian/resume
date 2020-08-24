@@ -1,142 +1,52 @@
 /* Elements */
 body {
-  background-color: #2e28a7;
-  color: white;
-  font-size: 14pt;
+  font-size: 16pt;
   margin-left: auto;
   margin-right: auto;
 }
 
-h1 {
-  /* Google API - Ubuntu font */
-  @font-face {
-    font-family: 'Ubuntu';
-    src:url('fonts/Ubuntu/')  format('truetype'),
-  }
-  text-align: center;
-  font-size: 40pt;
-  margin-top: 15px;
-  margin-bottom: 25px;
-}
-
-td {
-  color: white;
-  padding-left: 15px;
-  text-align: center;
-}
-
-tr {
-  color: white;
-  padding: 10px;
-}
-
-section {
-  padding-bottom: 10px;
+hr {
+  width: 80%;
 }
 
 /* Classes */
-.background {
-  font-size: 14pt;
-  text-align: left;
-  width: 100%;
+.container {
+  overflow-wrap: break-word;
 }
 
 .header {
-  padding: 5px;
-  margin: 20px auto 15px;
+  font-size: 40pt;
+  text-align: center;
+}
+
+.info {
+  padding-top: 1%;
 }
 
 .linkBtn {
-  display: inline-block;
-  margin: 15px 20px 0;
-}
-
-.modules-table {
-  padding-left: 10pt;
-}
-
-.profile {
-  padding-left: 15px;
-  padding-top: 15px;
-}
-
-.profile-info {
-  margin: auto;
-}
-
-.profile-section {
+  padding: 2% 2% 3%;
   text-align: center;
 }
 
-.profile-table {
-  width: 100%;
-}
-
-.qualifications {
-  background-color: rgb(18, 96, 117);
-  border: 1px solid azure;
-  text-align: left;
-}
-
-.qualifications-header {
-  background-color: #187f9c;
-  border: 1px solid azure;
-  font-size: xx-large;
+.profilePic {
   text-align: center;
 }
 
-.section {
-  margin: auto;
-  width: 75%;
-}
-
-.section-body {
-  background-color: #16117c;
-  margin: auto;
-  width: 100%;
-}
-
-.section-header {
-  padding: 3px 0 0 0;
-  text-decoration: underline;
+.subheading {
+  font-size: 11pt;
 }
 
 /* IDs */
-#aboutme {
-  text-align: center;
-}
-
-#edu {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #profilePic {
-  align-self: center;
+  height: 300px;
+  margin: auto;
+  padding-top: 5%;
+  width: 300px;
 }
 
-#topBtn {
-  background-color: rgb(86, 159, 255);
-  border: solid #263a92;
-  border-radius: 15px;
-  bottom: 10px;
-  color: rgb(255, 238, 0);
-  cursor: pointer;
-  display: none;
-  font-size: 14px;
-  opacity: 35%;
-  outline: none;
-  padding: 15px;
-  position: fixed;
-  right: 15px;
-  transition: 0.5s;
-  z-index: 99;
-}
-
-#topBtn:hover {
-  background-color: rgb(86, 159, 255);
-  border: solid #263a92;
-  font-weight: bold;
-  opacity: 100%;
-  transition: 0.5s;
+#root {
+  background-color: #F1F1F1;
+  height: 85%;
+  margin: 15% auto;
+  width: 80%;
 }
