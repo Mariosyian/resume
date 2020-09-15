@@ -5,6 +5,13 @@ body {
   margin-right: auto;
 }
 
+br {
+  content: ' ';
+  display: block;
+  line-height: 22px;
+  margin-top: 5px;
+}
+
 hr {
   width: 80%;
 }
