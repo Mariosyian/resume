@@ -39,6 +39,11 @@ hr {
   text-align: center;
 }
 
+.moon {
+  float: right;
+  padding-right: 1%;
+}
+
 .subheading {
   font-size: 11pt;
 }
@@ -61,5 +66,27 @@ hr {
   #profilePic {
     height: 225px;
     width: 225px;
-  }  
+  }
+
+  .row {
+    padding: 0.5% 1%;
+  }
+}
+
+/** DARK MODE **/
+.darkModeBody {
+  background-color: #464a52;
+}
+
+.darkModeContainer {
+  background-color: black;
+}
+
+.darkModeContainerFluid {
+  background-color: #343a40;
+  color: white;
+}
+
+.darkModeIcon {
+  color: white;
 }
