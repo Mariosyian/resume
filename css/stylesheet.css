@@ -21,6 +21,10 @@ hr {
   overflow-wrap: break-word;
 }
 
+.fab, .fas, .icon {
+  font-size: 1.5em;
+}
+
 .header {
   font-size: 40pt;
   text-align: center;
@@ -68,12 +72,16 @@ hr {
     width: 225px;
   }
 
+  .moon {
+    padding-top: 1%;
+  }
+
   .row {
     padding: 0.5% 1%;
   }
 }
 
-/** DARK MODE **/
+/* Dark Mode */
 .darkModeBody {
   background-color: #464a52;
 }
