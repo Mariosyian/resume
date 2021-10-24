@@ -1,8 +1,10 @@
 $("#toggleDark").click( () => {
-  if ($(".moon").attr("src") === "images/moon-dark.svg") {
-    $(".moon").attr("src", "images/moon-light.svg");
+  if ($(".moon").hasClass("fa-moon")) {
+    $(".moon").removeClass("fa-moon");
+    $(".moon").addClass("fa-sun");
   } else {
-    $(".moon").attr("src", "images/moon-dark.svg");
+    $(".moon").removeClass("fa-sun");
+    $(".moon").addClass("fa-moon");
   }
   const elements = [
     { "el": "body", "class": "darkModeBody" },
