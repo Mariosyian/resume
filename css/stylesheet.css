@@ -43,7 +43,7 @@ hr {
   text-align: center;
 }
 
-.moon {
+.toggleDarkModeIcon {
   float: right;
   padding-right: 1%;
 }
@@ -74,12 +74,19 @@ hr {
     width: 225px;
   }
 
-  .moon {
+  .toggleDarkModeIcon {
     padding-top: 1%;
   }
 
   .row {
     padding: 0.5% 1%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #profilePic {
+    height: 150px;
+    width: 150px;
   }
 }
 
