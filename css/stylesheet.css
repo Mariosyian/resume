@@ -43,6 +43,10 @@ hr {
   text-align: center;
 }
 
+.round {
+  border-radius: 25px;
+}
+
 .toggleDarkModeIcon {
   float: right;
   padding-right: 1%;
@@ -72,6 +76,10 @@ hr {
   #profilePic {
     height: 225px;
     width: 225px;
+  }
+
+  .header {
+    font-size: larger;
   }
 
   .toggleDarkModeIcon {
