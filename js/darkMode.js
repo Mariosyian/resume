@@ -1,10 +1,10 @@
 $("#toggleDark").click( () => {
-  if ($("#toggleDark").hasClass("fa-moon")) {
-    $("#toggleDark").removeClass("fa-moon");
-    $("#toggleDark").addClass("fa-sun");
+  if ($("#toggleDark").hasClass("bi-moon-fill")) {
+    $("#toggleDark").removeClass("bi-moon-fill");
+    $("#toggleDark").addClass("bi-brightness-high-fill");
   } else {
-    $("#toggleDark").removeClass("fa-sun");
-    $("#toggleDark").addClass("fa-moon");
+    $("#toggleDark").removeClass("bi-brightness-high-fill");
+    $("#toggleDark").addClass("bi-moon-fill");
   }
   const elements = [
     { "el": "body", "class": "darkModeBody" },
